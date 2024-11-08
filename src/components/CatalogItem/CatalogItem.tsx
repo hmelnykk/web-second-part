@@ -3,7 +3,7 @@ import Button from "../Buttons/Button";
 
 const CatalogItem = ({ item }: { item: ArtistType }) => {
     const { id, name, description, tour, ticketPrice } = item;
-    return <div className="grid grid-cols-5 space-y-8 items-center border-b">
+    return <div className="grid grid-cols-5 space-y-8 items-center border-b py-2">
         <div>
             <p className="font-semibold">{name}</p>
             <p>{description}</p>

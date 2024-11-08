@@ -12,7 +12,7 @@ const CatalogPage = () => {
         const filterOrder = (document.getElementById('filterOrder')) as HTMLSelectElement;
         const searchInput = (document.getElementById('search-input')) as HTMLInputElement;
 
-        const sortedList = [...showlist];
+        const sortedList = [...db];
 
         if (filterBy) {
             if (filterBy.value === 'Popularity') sortedList.sort((a, b) => b.monthListeners - a.monthListeners)
@@ -20,15 +20,13 @@ const CatalogPage = () => {
         }
         if (filterOrder && filterOrder.value === 'Lower to Bigger') sortedList.reverse();
 
-        setShowlist(
-            sortedList.filter((item) => {
-                if (searchInput.value) {
-                    if (item.name.toLowerCase().includes(searchInput.value.toLowerCase())) return true
-                    return false
-                }
-                return true;
-            })
-        );
+        setShowlist(sortedList.filter((item) => {
+            if (searchInput.value) {
+                if (item.name.toLowerCase().includes(searchInput.value.toLowerCase())) return true
+                return false
+            }
+            return true;
+        }));
     }
 
     return <div className="container mx-auto my-8 space-y-4">
