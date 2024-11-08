@@ -1,5 +1,6 @@
 export const db = [
     {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,
@@ -8,6 +9,7 @@ export const db = [
         tour: ['Paris', 'Texas'],
     },
     {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,
@@ -16,6 +18,7 @@ export const db = [
         tour: ['Paris', 'Texas'],
     },
     {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,
@@ -24,6 +27,7 @@ export const db = [
         tour: ['Paris', 'Texas'],
     },
     {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,
@@ -32,6 +36,7 @@ export const db = [
         tour: ['Paris', 'Texas'],
     },
     {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,
@@ -40,6 +45,7 @@ export const db = [
         tour: ['Paris', 'Texas'],
     },
     {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,
@@ -48,6 +54,7 @@ export const db = [
         tour: ['Paris', 'Texas'],
     },
     {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,
@@ -56,6 +63,25 @@ export const db = [
         tour: ['Paris', 'Texas'],
     },
     {
+        id: 0,
+        name: 'Tyler, the Creator',
+        description: 'just a nigger',
+        monthListeners: 34129832,
+        songs: 52,
+        ticketPrice: 100,
+        tour: ['Paris', 'Texas'],
+    },
+    {
+        id: 0,
+        name: 'Tyler, the Creator',
+        description: 'just a nigger',
+        monthListeners: 34129832,
+        songs: 52,
+        ticketPrice: 100,
+        tour: ['Paris', 'Texas'],
+    },
+    {
+        id: 0,
         name: 'Tyler, the Creator',
         description: 'just a nigger',
         monthListeners: 34129832,

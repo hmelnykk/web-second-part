@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../../components/Buttons/Button";
 import ShowroomCard from "../../components/ShowroomCard/ShowroomCard";
 import { db } from "../../db";
+import { Link } from "react-router-dom";
 
 const Showroom = () => {
     const [openStep, setOpenStep] = useState<number>(1);
@@ -13,6 +14,16 @@ const Showroom = () => {
                 .map((el, idx) => {
                     return <ShowroomCard key={idx} item={el} />
                 })
+            }
+            {
+                openStep * 3 >= db.length ?
+                <Link to="/catalog">
+                    <div className="p-4 rounded-default bg-primary">
+                        <p className="font-semibold">Want to See more?</p>
+                        <p>Click here and open a whole world of artists</p>
+                    </div>
+                </Link>
+                : null
             }
         </div>
         {

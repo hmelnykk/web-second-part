@@ -5,7 +5,14 @@ export interface ButtonType {
     onClick?: () => void;
 }
 
+export interface SelectType {
+    name: string;
+    id: string;
+    options: string[];
+}
+
 export interface ArtistType {
+    id: number;
     name: string,
     description: string,
     monthListeners: number,
