@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import CatalogPage from "./pages/Catalog";
-import { db } from "./db";
 import SingleArtistPage from "./pages/SingleArtistPage";
 
 export const router = createBrowserRouter([
@@ -25,7 +24,7 @@ export const router = createBrowserRouter([
         </MainLayout>,
         loader: async ({ request, params }) => {
             const { id } = params;
-            return id ? db[parseInt(id)] : undefined;
+            return await fetch(`http://localhost:3001/artists/${id}`).then(res => res.json());
         }
     },
     {
