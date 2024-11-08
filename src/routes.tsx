@@ -8,5 +8,17 @@ export const router = createBrowserRouter([
         element: <MainLayout>
             <HomePage />
         </MainLayout>
-    }
+    },
+    {
+        path: '/catalog',
+        element: <MainLayout>
+            <HomePage />
+        </MainLayout>
+    },
+    {
+        path: '/cart',
+        element: <MainLayout>
+            <HomePage />
+        </MainLayout>
+    },
 ]);
