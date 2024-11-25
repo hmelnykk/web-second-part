@@ -15,7 +15,7 @@ const Showroom = () => {
         axios.get('http://localhost:3001/artists').then(res => {
             setArtists(res.data);
             setIsLoading(false);
-        })
+        }).catch(() => {})
     }, []);
 
     return (

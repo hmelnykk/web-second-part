@@ -3,6 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import CatalogPage from "./pages/Catalog";
 import SingleArtistPage from "./pages/SingleArtistPage";
+import CartPage from "./pages/Cart";
 
 export const router = createBrowserRouter([
     {
@@ -30,7 +31,7 @@ export const router = createBrowserRouter([
     {
         path: '/cart',
         element: <MainLayout>
-            <p>sometime i ll do it</p>
+            <CartPage />
         </MainLayout>
     },
 ]);
